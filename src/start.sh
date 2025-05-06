@@ -83,7 +83,7 @@ download_model() {
 }
 
 # Define base paths
-CHECKPOINT_DIR="$NETWORK_VOLUME/ComfyUI/models/diffusion_models"
+CHECKPOINT_DIR="$NETWORK_VOLUME/ComfyUI/models/checkpoints"
 TEXT_ENCODERS_DIR="$NETWORK_VOLUME/ComfyUI/models/text_encoders"
 UPSCALE_DIR="$NETWORK_VOLUME/ComfyUI/models/upscale_models"
 
