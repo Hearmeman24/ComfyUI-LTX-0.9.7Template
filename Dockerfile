@@ -66,6 +66,7 @@ RUN for repo in \
     https://github.com/WASasquatch/was-node-suite-comfyui.git \
     https://github.com/cubiq/ComfyUI_essentials.git \
     https://github.com/chrisgoringe/cg-use-everywhere.git \
+    https://github.com/Lightricks/ComfyUI-LTXVideo.git \
     https://github.com/welltop-cn/ComfyUI-TeaCache.git \
     https://github.com/Fannovel16/ComfyUI-Frame-Interpolation.git \
     https://github.com/M1kep/ComfyLiterals.git; \

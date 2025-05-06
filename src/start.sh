@@ -83,13 +83,23 @@ download_model() {
 }
 
 # Define base paths
-DIFFUSION_MODELS_DIR="$NETWORK_VOLUME/ComfyUI/models/diffusion_models"
+CHECKPOINT_DIR="$NETWORK_VOLUME/ComfyUI/models/diffusion_models"
 TEXT_ENCODERS_DIR="$NETWORK_VOLUME/ComfyUI/models/text_encoders"
 UPSCALE_DIR="$NETWORK_VOLUME/ComfyUI/models/upscale_models"
 
+if [ "$download_full_model" == "true" ]; then
+  echo "Downloading full LTX models..."
 
-download_model "$DIFFUSION_MODELS_DIR" "ltxv-13b-0.9.7-dev.safetensors" \
+  download_model "$CHECKPOINT_DIR" "ltxv-13b-0.9.7-dev.safetensors" \
   "Lightricks/LTX-Video" "ltxv-13b-0.9.7-dev.safetensors"
+fi
+
+if [ "$download_quantized_model" == "true" ]; then
+  echo "Downloading quantized LTX models..."
+
+  download_model "$CHECKPOINT_DIR" "ltxv-13b-0.9.7-dev-fp8.safetensors" \
+  "Lightricks/LTX-Video" "ltxv-13b-0.9.7-dev-fp8.safetensors"
+fi
 
 # Download text encoders
 echo "Downloading text encoders..."
