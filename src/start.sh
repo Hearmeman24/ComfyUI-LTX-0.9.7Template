@@ -101,7 +101,7 @@ if [ "$download_quantized_model" == "true" ]; then
   "Lightricks/LTX-Video" "ltxv-13b-0.9.7-dev-fp8.safetensors"
 
   echo "Installing Q8 Kernels"
-  cd "ComfyUI-LTX-0.9.7Template" || { echo "Error: Directory ComfyUI-LTX-0.9.7Template not found"; exit 1; }
+  cd "/ComfyUI-LTX-0.9.7Template" || { echo "Error: Directory ComfyUI-LTX-0.9.7Template not found"; exit 1; }
 
   # Check if wheel exists
   if [ ! -f "q8_kernels-0.0.4-cp312-cp312-linux_x86_64.whl" ]; then
