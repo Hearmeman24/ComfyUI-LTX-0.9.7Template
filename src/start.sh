@@ -100,36 +100,32 @@ if [ "$download_quantized_model" == "true" ]; then
   download_model "$CHECKPOINT_DIR" "ltxv-13b-0.9.7-dev-fp8.safetensors" \
   "Lightricks/LTX-Video" "ltxv-13b-0.9.7-dev-fp8.safetensors"
 
-  echo "Installing Q8 Kernels"
-  cd "/ComfyUI-LTX-0.9.7Template" || { echo "Error: Directory ComfyUI-LTX-0.9.7Template not found"; exit 1; }
-
-  # Check if wheel exists
-  if [ ! -f "q8_kernels-0.0.4-cp312-cp312-linux_x86_64.whl" ]; then
-      echo "Error: Q8 Kernels wheel file not found"
-      exit 1
-  fi
-
-  # Check Python version compatibility
-  PYTHON_VERSION=$(python --version | cut -d' ' -f2 | cut -d'.' -f1,2)
-  if [[ "$PYTHON_VERSION" != "3.12" ]]; then
-      echo "Warning: Q8 Kernels wheel is built for Python 3.12, but current Python is $PYTHON_VERSION"
-      echo "Attempting to install a compatible version instead..."
-
-      # Try to find a compatible wheel file
-      COMPATIBLE_WHEEL=$(find . -name "q8_kernels*.whl" -not -name "*cp312*" | grep -i $(python -c "import platform; print(platform.machine())") | head -1)
-
-      if [ -n "$COMPATIBLE_WHEEL" ]; then
-          echo "Found compatible wheel: $COMPATIBLE_WHEEL"
-          pip install "$COMPATIBLE_WHEEL" || echo "Warning: Installation failed, continuing anyway"
-      else
-          echo "No compatible wheel found. Skipping Q8 Kernels installation."
-      fi
+  if $PIP show ninja &>/dev/null; then
+    echo "🔄 Uninstalling existing ninja…"
+    $PIP uninstall -y ninja
   else
-      # Install the specified wheel
-      pip install q8_kernels-0.0.4-cp312-cp312-linux_x86_64.whl || echo "Warning: Installation failed, continuing anyway"
+    echo "⚠️  ninja not installed; skipping uninstall."
   fi
 
-  echo "Q8 Kernels installation step completed"
+  echo "🔄 Installing ninja==1.11.1…"
+  $PIP install --upgrade ninja==1.11.1
+
+  REPO_DIR="LTX-Video-Q8-Kernels"
+  if [ -d "$REPO_DIR" ]; then
+    echo "🔄 Updating existing $REPO_DIR…"
+    cd "$REPO_DIR"
+    git pull --ff-only
+  else
+    echo "🔄 Cloning repository…"
+    git clone https://github.com/Lightricks/LTX-Video-Q8-Kernels.git "$REPO_DIR"
+    cd "$REPO_DIR"
+  fi
+
+  # 6. Run the installer
+  echo "🔄 Running setup.py install…"
+  python setup.py install
+
+  echo "✅ Q8 Kernels installed successfully!"
 fi
 
 # Download text encoders
