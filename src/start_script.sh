@@ -2,16 +2,16 @@
 set -euo pipefail
 
 # Check if directory exists and remove it or update it
-if [ -d "ComfyUI-Wan-Template-5090" ]; then
+if [ -d "ComfyUI-LTX-0.9.7Template" ]; then
   echo "📂 Directory already exists. Removing it first..."
-  rm -rf ComfyUI-Wan-Template-5090
+  rm -rf ComfyUI-LTX-0.9.7Template
 fi
 
-echo "📥 Cloning ComfyUI-Wan-Template-5090…"
-git clone https://github.com/Hearmeman24/ComfyUI-Wan-Template-5090.git
+echo "📥 Cloning ComfyUI-LTX-0.9.7Template…"
+git clone https://github.com/Hearmeman24/ComfyUI-LTX-0.9.7Template.git
 
 echo "📂 Moving start.sh into place…"
-mv ComfyUI-Wan-Template-5090/src/start.sh /
+mv ComfyUI-LTX-0.9.7Template/src/start.sh /
 
 echo "▶️ Running start.sh"
 bash /start.sh
