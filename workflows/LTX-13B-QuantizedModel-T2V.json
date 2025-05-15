@@ -231,6 +231,7 @@
         "cnr_id": "ComfyUI-LTXVideo",
         "ver": "972af4120d5737f7242677993e6dccb89f08199d",
         "Node name for S&R": "LTXVLatentUpsamplerModelLoader",
+        "aux_id": "Lightricks/ComfyUI-LTXVideo",
         "widget_ue_connectable": {
           "upscale_model": true,
           "spatial_upsample": true,
@@ -305,6 +306,7 @@
         "cnr_id": "comfyui-kjnodes",
         "ver": "b7e5b6f1e2b7c79b3f1e4b4bfe5e1687715803ab",
         "Node name for S&R": "ImageResizeKJ",
+        "aux_id": "kijai/ComfyUI-KJNodes",
         "widget_ue_connectable": {
           "width": true,
           "height": true,
@@ -400,6 +402,7 @@
         "cnr_id": "ComfyUI-LTXVideo",
         "ver": "972af4120d5737f7242677993e6dccb89f08199d",
         "Node name for S&R": "LTXVFilmGrain",
+        "aux_id": "Lightricks/ComfyUI-LTXVideo",
         "widget_ue_connectable": {
           "grain_intensity": true,
           "saturation": true
@@ -409,135 +412,6 @@
         0.010000000000000002,
         0.5
       ]
-    },
-    {
-      "id": 1336,
-      "type": "VHS_VideoCombine",
-      "pos": [
-        2789.545166015625,
-        2253.726318359375
-      ],
-      "size": [
-        471.0374755859375,
-        648.691650390625
-      ],
-      "flags": {},
-      "order": 29,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 3578
-        },
-        {
-          "name": "audio",
-          "shape": 7,
-          "type": "AUDIO",
-          "link": null
-        },
-        {
-          "name": "meta_batch",
-          "shape": 7,
-          "type": "VHS_BatchManager",
-          "link": null
-        },
-        {
-          "name": "vae",
-          "shape": 7,
-          "type": "VAE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "Filenames",
-          "type": "VHS_FILENAMES",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-videohelpersuite",
-        "ver": "a7ce59e381934733bfae03b1be029756d6ce936d",
-        "Node name for S&R": "VHS_VideoCombine",
-        "widget_ue_connectable": {
-          "frame_rate": true,
-          "loop_count": true,
-          "filename_prefix": true,
-          "format": true,
-          "pingpong": true,
-          "save_output": true
-        }
-      },
-      "widgets_values": {
-        "frame_rate": 24,
-        "loop_count": 0,
-        "filename_prefix": "ltxv-base",
-        "format": "video/h264-mp4",
-        "pix_fmt": "yuv420p",
-        "crf": 19,
-        "save_metadata": true,
-        "trim_to_audio": false,
-        "pingpong": false,
-        "save_output": false,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "filename": "ltxv-base_00001.mp4",
-            "subfolder": "",
-            "type": "temp",
-            "format": "video/h264-mp4",
-            "frame_rate": 24
-          }
-        }
-      }
-    },
-    {
-      "id": 6,
-      "type": "CLIPTextEncode",
-      "pos": [
-        725.3102416992188,
-        2114.966064453125
-      ],
-      "size": [
-        307.2346496582031,
-        204.2556610107422
-      ],
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 74
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "slot_index": 0,
-          "links": [
-            3364
-          ]
-        }
-      ],
-      "title": "CLIP Text Encode (Positive Prompt)",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.28",
-        "Node name for S&R": "CLIPTextEncode",
-        "widget_ue_connectable": {
-          "text": true
-        }
-      },
-      "widgets_values": [
-        ""
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
     },
     {
       "id": 1858,
@@ -792,6 +666,7 @@
         "cnr_id": "ComfyUI-LTXVideo",
         "ver": "972af4120d5737f7242677993e6dccb89f08199d",
         "Node name for S&R": "LTXVLatentUpsampler",
+        "aux_id": "Lightricks/ComfyUI-LTXVideo",
         "widget_ue_connectable": {}
       },
       "widgets_values": []
@@ -835,6 +710,7 @@
         "cnr_id": "ComfyUI-LTXVideo",
         "ver": "972af4120d5737f7242677993e6dccb89f08199d",
         "Node name for S&R": "LTXVAdainLatent",
+        "aux_id": "Lightricks/ComfyUI-LTXVideo",
         "widget_ue_connectable": {
           "factor": true
         }
@@ -1002,6 +878,7 @@
         "cnr_id": "comfyui-videohelpersuite",
         "ver": "2c25b8b53835aaeb63f831b3137c705cf9f85dce",
         "Node name for S&R": "VHS_VideoCombine",
+        "aux_id": "Kosinkadink/ComfyUI-VideoHelperSuite",
         "widget_ue_connectable": {
           "frame_rate": true,
           "loop_count": true,
@@ -1088,6 +965,7 @@
         "cnr_id": "ComfyUI-LTXVideo",
         "ver": "972af4120d5737f7242677993e6dccb89f08199d",
         "Node name for S&R": "STGGuiderAdvanced",
+        "aux_id": "Lightricks/ComfyUI-LTXVideo",
         "widget_ue_connectable": {
           "skip_steps_sigma_threshold": true,
           "cfg_star_rescale": true,
@@ -1202,6 +1080,7 @@
         "cnr_id": "ComfyUI-LTXVideo",
         "ver": "972af4120d5737f7242677993e6dccb89f08199d",
         "Node name for S&R": "STGAdvancedPresets",
+        "aux_id": "Lightricks/ComfyUI-LTXVideo",
         "widget_ue_connectable": {
           "preset": true
         }
@@ -1323,6 +1202,7 @@
         "cnr_id": "ComfyUI-LTXVideo",
         "ver": "972af4120d5737f7242677993e6dccb89f08199d",
         "Node name for S&R": "STGGuiderAdvanced",
+        "aux_id": "Lightricks/ComfyUI-LTXVideo",
         "widget_ue_connectable": {
           "skip_steps_sigma_threshold": true,
           "cfg_star_rescale": true,
@@ -1341,52 +1221,6 @@
         "0, 4, 4, 2, 1, 1",
         "1, 1, 1, 1, 1, 1",
         "[35], [35], [35], [42], [42], [42]"
-      ]
-    },
-    {
-      "id": 1874,
-      "type": "LTXQ8Patch",
-      "pos": [
-        1083.1651611328125,
-        2451.174560546875
-      ],
-      "size": [
-        315,
-        58
-      ],
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 5372
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            5373,
-            5374,
-            5375,
-            5376,
-            5377
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "ComfyUI-LTXVideo",
-        "ver": "972af4120d5737f7242677993e6dccb89f08199d",
-        "Node name for S&R": "LTXQ8Patch",
-        "widget_ue_connectable": {
-          "use_fp8_attention": true
-        }
-      },
-      "widgets_values": [
-        false
       ]
     },
     {
@@ -1424,6 +1258,7 @@
         "cnr_id": "ComfyUI-LTXVideo",
         "ver": "972af4120d5737f7242677993e6dccb89f08199d",
         "Node name for S&R": "Set VAE Decoder Noise",
+        "aux_id": "Lightricks/ComfyUI-LTXVideo",
         "widget_ue_connectable": {
           "timestep": true,
           "scale": true,
@@ -1433,7 +1268,7 @@
       "widgets_values": [
         0.05,
         0.025,
-        750956894833102,
+        85094512995965,
         "randomize"
       ]
     },
@@ -1465,6 +1300,7 @@
         "cnr_id": "ComfyUI-LTXVideo",
         "ver": "972af4120d5737f7242677993e6dccb89f08199d",
         "Node name for S&R": "STGAdvancedPresets",
+        "aux_id": "Lightricks/ComfyUI-LTXVideo",
         "widget_ue_connectable": {
           "preset": true
         }
@@ -1601,6 +1437,7 @@
         "cnr_id": "ComfyUI-LTXVideo",
         "ver": "972af4120d5737f7242677993e6dccb89f08199d",
         "Node name for S&R": "LTXVTiledSampler",
+        "aux_id": "Lightricks/ComfyUI-LTXVideo",
         "widget_ue_connectable": {
           "horizontal_tiles": true,
           "vertical_tiles": true,
@@ -1688,6 +1525,7 @@
         "cnr_id": "ComfyUI-LTXVideo",
         "ver": "972af4120d5737f7242677993e6dccb89f08199d",
         "Node name for S&R": "LTXVBaseSampler",
+        "aux_id": "Lightricks/ComfyUI-LTXVideo",
         "widget_ue_connectable": {
           "width": true,
           "height": true,
@@ -1709,6 +1547,185 @@
         30,
         0
       ]
+    },
+    {
+      "id": 1874,
+      "type": "LTXQ8Patch",
+      "pos": [
+        1083.1651611328125,
+        2451.174560546875
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 5372
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            5373,
+            5374,
+            5375,
+            5376,
+            5377
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI-LTXVideo",
+        "ver": "972af4120d5737f7242677993e6dccb89f08199d",
+        "Node name for S&R": "LTXQ8Patch",
+        "aux_id": "Lightricks/ComfyUI-LTXVideo",
+        "widget_ue_connectable": {
+          "use_fp8_attention": true
+        }
+      },
+      "widgets_values": [
+        true
+      ]
+    },
+    {
+      "id": 1336,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        2787.03369140625,
+        2205.161376953125
+      ],
+      "size": [
+        471.0374755859375,
+        648.691650390625
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 3578
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "a7ce59e381934733bfae03b1be029756d6ce936d",
+        "Node name for S&R": "VHS_VideoCombine",
+        "aux_id": "Kosinkadink/ComfyUI-VideoHelperSuite",
+        "widget_ue_connectable": {
+          "frame_rate": true,
+          "loop_count": true,
+          "filename_prefix": true,
+          "format": true,
+          "pingpong": true,
+          "save_output": true
+        }
+      },
+      "widgets_values": {
+        "frame_rate": 24,
+        "loop_count": 0,
+        "filename_prefix": "ltxv-base",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 19,
+        "save_metadata": true,
+        "trim_to_audio": false,
+        "pingpong": false,
+        "save_output": false,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "ltxv-base_00001.mp4",
+            "subfolder": "",
+            "type": "temp",
+            "format": "video/h264-mp4",
+            "frame_rate": 24,
+            "workflow": "ltxv-base_00001.png",
+            "fullpath": "/tmp/latentsync_dcd4c624/latentsync_d42ef614/ltxv-base_00001.mp4"
+          }
+        }
+      }
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": [
+        725.3102416992188,
+        2114.966064453125
+      ],
+      "size": [
+        307.2346496582031,
+        204.2556610107422
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 74
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "slot_index": 0,
+          "links": [
+            3364
+          ]
+        }
+      ],
+      "title": "CLIP Text Encode (Positive Prompt)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.28",
+        "Node name for S&R": "CLIPTextEncode",
+        "widget_ue_connectable": {
+          "text": true
+        }
+      },
+      "widgets_values": [
+        "Golden hour light bathes a curved seaside promenade as a woman steps into frame, wind tousling her loose hair.\nShe wears a flowing, pastel linen sundress that flutters with each gentle stride along weathered wooden planks.\nThe camera glides smoothly at waist level, capturing the rhythmic click of her espadrilles against sun-bleached boards.\nPalm-fringed pastel storefronts and vintage lampposts cast long shadows beneath a sky awash in peach and lavender hues.\nShallow focus and subtle lens flares illuminate salt-kissed railings and distant waves softly lapping at the shore.\nAmbient sounds of seagulls, acoustic guitar riffs, and distant laughter build as she pauses to gaze serenely toward the horizon."
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
     }
   ],
   "links": [
@@ -2108,8 +2125,8 @@
     "ds": {
       "scale": 0.6741546927603917,
       "offset": [
-        -901.2982093282639,
-        -1993.472019777985
+        627.4622766381588,
+        -1912.5029984370335
       ]
     },
     "frontendVersion": "1.18.9",
@@ -2611,7 +2628,8 @@
       "comfy-core": "0.3.30",
       "comfyui-kjnodes": "1.0.8"
     },
-    "ue_links": []
+    "ue_links": [],
+    "links_added_by_ue": []
   },
   "version": 0.4
 }

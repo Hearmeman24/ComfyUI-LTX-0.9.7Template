@@ -94,6 +94,13 @@ if [ "$download_full_model" == "true" ]; then
   "Lightricks/LTX-Video" "ltxv-13b-0.9.7-dev.safetensors"
 fi
 
+if [ "$download_distilled_model" == "true" ]; then
+  echo "Downloading Distilled LTX models..."
+
+  download_model "$CHECKPOINT_DIR" "ltxv-13b-0.9.7-distilled.safetensors" \
+  "Lightricks/LTX-Video" "ltxv-13b-0.9.7-distilled.safetensors"
+fi
+
 if [ "$download_quantized_model" == "true" ]; then
   echo "Downloading quantized LTX models..."
 
