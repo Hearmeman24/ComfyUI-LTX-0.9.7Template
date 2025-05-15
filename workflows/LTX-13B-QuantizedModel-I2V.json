@@ -1,8 +1,8 @@
 {
   "id": "394ed254-7306-42a2-9ae6-aa880ce4456d",
   "revision": 0,
-  "last_node_id": 1875,
-  "last_link_id": 5380,
+  "last_node_id": 1877,
+  "last_link_id": 5383,
   "nodes": [
     {
       "id": 1601,
@@ -16,7 +16,7 @@
         150
       ],
       "flags": {},
-      "order": 32,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -69,7 +69,7 @@
         78
       ],
       "flags": {},
-      "order": 21,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -114,52 +114,6 @@
       "widgets_values": [
         24.000000000000004
       ]
-    },
-    {
-      "id": 7,
-      "type": "CLIPTextEncode",
-      "pos": [
-        730.2447509765625,
-        2399.255615234375
-      ],
-      "size": [
-        317.832275390625,
-        213.2843780517578
-      ],
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 75
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "slot_index": 0,
-          "links": [
-            3365
-          ]
-        }
-      ],
-      "title": "CLIP Text Encode (Negative Prompt)",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.28",
-        "Node name for S&R": "CLIPTextEncode",
-        "widget_ue_connectable": {
-          "text": true
-        }
-      },
-      "widgets_values": [
-        "low quality, worst quality, deformed, distorted, disfigured, motion smear, motion artifacts, fused fingers, bad anatomy, weird hand, ugly"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
     },
     {
       "id": 38,
@@ -255,7 +209,7 @@
         238
       ],
       "flags": {},
-      "order": 33,
+      "order": 35,
       "mode": 0,
       "inputs": [
         {
@@ -335,7 +289,7 @@
         46
       ],
       "flags": {},
-      "order": 27,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -378,7 +332,7 @@
         82
       ],
       "flags": {},
-      "order": 34,
+      "order": 36,
       "mode": 0,
       "inputs": [
         {
@@ -422,7 +376,7 @@
         648.691650390625
       ],
       "flags": {},
-      "order": 29,
+      "order": 31,
       "mode": 0,
       "inputs": [
         {
@@ -505,7 +459,7 @@
         204.2556610107422
       ],
       "flags": {},
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -615,31 +569,6 @@
       "bgcolor": "#653"
     },
     {
-      "id": 1861,
-      "type": "Note",
-      "pos": [
-        1510,
-        2368.19873046875
-      ],
-      "size": [
-        216.66220092773438,
-        88
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "widget_ue_connectable": {}
-      },
-      "widgets_values": [
-        "Presets override the values inside 🅛🅣🅧 STG Guider Advanced node."
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 1103,
       "type": "BasicScheduler",
       "pos": [
@@ -651,7 +580,7 @@
         106
       ],
       "flags": {},
-      "order": 22,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -698,7 +627,7 @@
         58
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -735,7 +664,7 @@
         88
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -760,7 +689,7 @@
         66
       ],
       "flags": {},
-      "order": 28,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
@@ -808,7 +737,7 @@
         78
       ],
       "flags": {},
-      "order": 30,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
@@ -855,7 +784,7 @@
         88
       ],
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -880,7 +809,7 @@
         82
       ],
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -917,7 +846,7 @@
         78
       ],
       "flags": {},
-      "order": 25,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -961,10 +890,10 @@
       ],
       "size": [
         610.8043212890625,
-        334
+        1235.5933837890625
       ],
       "flags": {},
-      "order": 35,
+      "order": 37,
       "mode": 0,
       "inputs": [
         {
@@ -1026,13 +955,13 @@
           "hidden": false,
           "paused": false,
           "params": {
-            "filename": "ltxv-hd_00001.mp4",
+            "filename": "ltxv-hd_00007.mp4",
             "subfolder": "",
             "type": "temp",
             "format": "video/h264-mp4",
             "frame_rate": 24,
-            "workflow": "ltxv_00055.png",
-            "fullpath": "C:\\Users\\Zeev\\Projects\\ComfyUI\\temp\\ltxv_00055.mp4"
+            "workflow": "ltxv-hd_00007.png",
+            "fullpath": "/tmp/latentsync_4e7ee528/ltxv-hd_00007.mp4"
           },
           "muted": true
         }
@@ -1050,7 +979,7 @@
         262
       ],
       "flags": {},
-      "order": 24,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -1120,7 +1049,7 @@
         130
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1145,7 +1074,7 @@
         346
       ],
       "flags": {},
-      "order": 26,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -1182,7 +1111,7 @@
           "name": "optional_cond_images",
           "shape": 7,
           "type": "IMAGE",
-          "link": 5361
+          "link": 5382
         }
       ],
       "outputs": [
@@ -1223,50 +1152,6 @@
       ]
     },
     {
-      "id": 1206,
-      "type": "LoadImage",
-      "pos": [
-        1066.6751708984375,
-        2599.134765625
-      ],
-      "size": [
-        342.5999755859375,
-        314
-      ],
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            5285,
-            5361
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.30",
-        "Node name for S&R": "LoadImage",
-        "widget_ue_connectable": {
-          "image": true,
-          "upload": true
-        }
-      },
-      "widgets_values": [
-        "flux_dev_checkpoint_example q8.png",
-        "image"
-      ]
-    },
-    {
       "id": 1871,
       "type": "STGAdvancedPresets",
       "pos": [
@@ -1278,7 +1163,7 @@
         58
       ],
       "flags": {},
-      "order": 12,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1314,7 +1199,7 @@
         148.08804321289062
       ],
       "flags": {},
-      "order": 13,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1339,7 +1224,7 @@
         342
       ],
       "flags": {},
-      "order": 31,
+      "order": 33,
       "mode": 0,
       "inputs": [
         {
@@ -1381,7 +1266,7 @@
           "name": "optional_cond_image",
           "shape": 7,
           "type": "IMAGE",
-          "link": 5285
+          "link": 5383
         }
       ],
       "outputs": [
@@ -1434,7 +1319,7 @@
         82
       ],
       "flags": {},
-      "order": 14,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1472,7 +1357,7 @@
         262
       ],
       "flags": {},
-      "order": 23,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -1531,52 +1416,6 @@
       ]
     },
     {
-      "id": 1874,
-      "type": "LTXQ8Patch",
-      "pos": [
-        1083.1651611328125,
-        2451.174560546875
-      ],
-      "size": [
-        315,
-        58
-      ],
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 5372
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            5373,
-            5374,
-            5375,
-            5376,
-            5377
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "ComfyUI-LTXVideo",
-        "ver": "972af4120d5737f7242677993e6dccb89f08199d",
-        "Node name for S&R": "LTXQ8Patch",
-        "widget_ue_connectable": {
-          "use_fp8_attention": true
-        }
-      },
-      "widgets_values": [
-        false
-      ]
-    },
-    {
       "id": 1875,
       "type": "Set VAE Decoder Noise",
       "pos": [
@@ -1588,7 +1427,7 @@
         130
       ],
       "flags": {},
-      "order": 20,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -1636,7 +1475,7 @@
         58
       ],
       "flags": {},
-      "order": 15,
+      "order": 13,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1661,18 +1500,64 @@
       ]
     },
     {
+      "id": 1874,
+      "type": "LTXQ8Patch",
+      "pos": [
+        1084.086181640625,
+        2564.462646484375
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 5372
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            5373,
+            5374,
+            5375,
+            5376,
+            5377
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI-LTXVideo",
+        "ver": "972af4120d5737f7242677993e6dccb89f08199d",
+        "Node name for S&R": "LTXQ8Patch",
+        "widget_ue_connectable": {
+          "use_fp8_attention": true
+        }
+      },
+      "widgets_values": [
+        false
+      ]
+    },
+    {
       "id": 44,
       "type": "CheckpointLoaderSimple",
       "pos": [
-        688.3630981445312,
-        2674.54052734375
+        1085.3299560546875,
+        2412.044921875
       ],
       "size": [
         334.6303405761719,
         98
       ],
       "flags": {},
-      "order": 16,
+      "order": 14,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1712,6 +1597,205 @@
       "widgets_values": [
         "ltxv-13b-0.9.7-dev-fp8.safetensors"
       ]
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": [
+        728.4027099609375,
+        2364.255615234375
+      ],
+      "size": [
+        317.832275390625,
+        213.2843780517578
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 75
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "slot_index": 0,
+          "links": [
+            3365
+          ]
+        }
+      ],
+      "title": "CLIP Text Encode (Negative Prompt)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.28",
+        "Node name for S&R": "CLIPTextEncode",
+        "widget_ue_connectable": {
+          "text": true
+        }
+      },
+      "widgets_values": [
+        "low quality, worst quality, deformed, distorted, disfigured, motion smear, motion artifacts, fused fingers, bad anatomy, weird hand, ugly"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 1206,
+      "type": "LoadImage",
+      "pos": [
+        358.3973693847656,
+        2593.609130859375
+      ],
+      "size": [
+        342.5999755859375,
+        314
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            5381
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.30",
+        "Node name for S&R": "LoadImage",
+        "widget_ue_connectable": {
+          "image": true,
+          "upload": true
+        }
+      },
+      "widgets_values": [
+        "flux_dev_checkpoint_example q8.png",
+        "image"
+      ]
+    },
+    {
+      "id": 1861,
+      "type": "Note",
+      "pos": [
+        1510,
+        2368.19873046875
+      ],
+      "size": [
+        216.66220092773438,
+        88
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "Presets override the values inside 🅛🅣🅧 STG Guider Advanced node."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 1877,
+      "type": "Note",
+      "pos": [
+        1097.684814453125,
+        2742.24072265625
+      ],
+      "size": [
+        216.66220092773438,
+        88
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "Recommended video sizes:\n512x768\n768x512"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 1876,
+      "type": "ImageResizeKJv2",
+      "pos": [
+        761.0159912109375,
+        2646.907470703125
+      ],
+      "size": [
+        270,
+        242
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 5381
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            5382,
+            5383
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "title": "Select video size",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "b7e5b6f1e2b7c79b3f1e4b4bfe5e1687715803ab",
+        "widget_ue_connectable": {},
+        "Node name for S&R": "ImageResizeKJv2"
+      },
+      "widgets_values": [
+        512,
+        768,
+        "lanczos",
+        "stretch",
+        "0, 0, 0",
+        "center",
+        2
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
     }
   ],
   "links": [
@@ -1900,14 +1984,6 @@
       "LATENT"
     ],
     [
-      5285,
-      1206,
-      0,
-      1796,
-      7,
-      "IMAGE"
-    ],
-    [
       5287,
       44,
       2,
@@ -1978,14 +2054,6 @@
       1796,
       4,
       "SIGMAS"
-    ],
-    [
-      5361,
-      1206,
-      0,
-      1338,
-      6,
-      "IMAGE"
     ],
     [
       5365,
@@ -2066,6 +2134,30 @@
       1601,
       1,
       "VAE"
+    ],
+    [
+      5381,
+      1206,
+      0,
+      1876,
+      0,
+      "IMAGE"
+    ],
+    [
+      5382,
+      1876,
+      0,
+      1338,
+      6,
+      "IMAGE"
+    ],
+    [
+      5383,
+      1876,
+      0,
+      1796,
+      7,
+      "IMAGE"
     ]
   ],
   "groups": [
@@ -2127,8 +2219,8 @@
     "ds": {
       "scale": 0.6741546927603917,
       "offset": [
-        -901.2982093282639,
-        -1993.472019777985
+        695.1433935081837,
+        -1868.6330439892272
       ]
     },
     "frontendVersion": "1.18.9",
